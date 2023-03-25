@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanalei', cursive;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 30px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tic-heading{
+    color: #ffffff;
+    font-size: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.root_{
+    min-height: 100vh;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+._root{
+    width: 45vw;
+    height: 50vh;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 7px 2px #000000;
+    margin: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #34495e;
+    color: #ffffff;
+}
+.footer{
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c3e50;
+    font-size: 20px;
+    height: 10vh;
+    border-top: 1px solid #ffffff;
+}
+.won-head{
+    color: #ffffff;
+}
+@media screen and (max-width:665px) {
+    ._root{
+        width: 70vw;
+    }
+}
+@media screen and (max-width:375px) {
+    ._root{
+        width: 90vw;
+    }
 }
